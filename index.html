@@ -3,24 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portfólio Profissional | Isaque Rocha Avelino</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; background-color: #f4f4f9; }
-        h1 { color: #2c3e50; }
-        p { color: #555; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f0f2f5; }
+        .header { background: #1a252f; color: #fff; padding: 2rem 1rem; text-align: center; border-bottom: 4px solid #3498db; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: #fff; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.2rem; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; }
+        h3 { color: #3498db; margin-top: 0; }
+        .project-tag { display: inline-block; background: #eef7fc; color: #2980b9; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .tech-list { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+        .tech-item { background: #34495e; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; }
     </style>
 </head>
 <body>
+
+    <header class="header">
+        <h1>Isaque Rocha Avelino</h1>
+        <p>Estudante de Tecnologia | Desenvolvedor em Formação</p>
+    </header>
+
     <div class="container">
-        <h1>Olá, eu sou o Isaque! </h1>
-        <p>Bem-vindo ao meu portfólio digital. Aqui organizo meus projetos de tecnologia.</p>
-        
-        <h2>🎓 Projetos Acadêmicos</h2>
-        <p>Projetos desenvolvidos durante a faculdade.</p>
-        
-        <h2> Projetos Pessoais</h2>
-        <p>Estudos e criações independentes.</p>
+        <section class="card">
+            <h2>🎯 Sobre o Portfólio</h2>
+            <p>Este repositório centraliza meus projetos acadêmicos e pessoais, utilizando metodologias de versionamento para garantir a integridade e evolução do código.</p>
+        </section>
+
+        <section class="card">
+            <h2>🚀 Projetos em Destaque</h2>
+            
+            <div style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+                <span class="project-tag">Projeto Pessoal</span>
+                <h3>Sistema de Gestão - GC</h3>
+                <p>Desenvolvimento de uma ferramenta personalizada para otimização de processos e gestão, focada em eficiência e organização de dados.</p>
+            </div>
+
+            <div>
+                <span class="project-tag">Acadêmico</span>
+                <h3>PortfolioHUB - Estrutura de Versionamento</h3>
+                <p>Criação e configuração de ambiente Git/GitHub com integração profissional ao LinkedIn e deploy automatizado via GitHub Pages.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🛠️ Principais Tecnologias</h2>
+            <ul class="tech-list">
+                <li class="tech-item">Git & GitHub</li>
+                <li class="tech-item">HTML5 & CSS3</li>
+                <li class="tech-item">Markdown</li>
+                <li class="tech-item">Gestão de Projetos</li>
+            </ul>
+        </section>
     </div>
+
 </body>
 </html>
